@@ -126,7 +126,7 @@ export class DashboardComponent extends BasePageComponent<DataForFrontendHome> i
     const types = new Set(data.quickAccess);
 
     const addAction = (
-      icon: string, label: string, activeMenu: ActiveMenu, onClick?: () => void, url?: string): void => {
+      icon: SvgIcon, label: string, activeMenu: ActiveMenu, onClick?: () => void, url?: string): void => {
       const entry = this.menu.menuEntry(activeMenu);
       if (entry) {
         this.actions.push({
